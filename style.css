@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 1000s;
+  background-color: #111111;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(5, 9, 11, 0.48);
+  background: linear-gradient(to top, #111111, transparent);
+  background-size: cover;
+}
+.bg {
+  z-index: -1;
+  position: absolute;
+  min-height: 100vh;
+}
+.bg img {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.banner .content {
+  max-width: 1000px;
+  text-align: center;
+  padding-right: 50px;
+}
+.banner .content h2 {
+  font-size: 3em;
+  color: white;
+}
+.banner .content p {
+  font-size: 1em;
+  color: white;
+}
+.content form input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #f1f1f1;
+  /* float: left; */
+  width: 70%;
+  background: #f1f1f1;
+}
+.content form button {
+  width: 25%;
+  padding: 11px;
+  background: #db2d43;
+  color: white;
+  font-size: 15px;
+  border: 2px solid #db2d43;
+  cursor: pointer;
+}
+.content form button:hover {
+  transition: all 0.3 ease;
+  background-color: black;
+  border-color: black;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header .logo {
+  color: white;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid #db2d43;
+  padding-bottom: 2px;
+}
+header .logo span {
+  color: #db2d43;
+  font-family: sans-serif;
+}
+header .navbar {
+  position: relative;
+  display: flex;
+  font-weight: bold;
+}
+header .navbar li {
+  list-style: none;
+  margin-left: 30px;
+  font-size: 20px;
+}
+header .navbar li a {
+  text-decoration: none;
+  color: white;
+  font-family: sans-serif;
+}
+header .navbar li a:hover {
+  transition: all 0.3 ease;
+  color: #db2d43;
+}
+header .navbar li a hr {
+  border: none;
+  border-bottom: 3px solid #db2d43;
+  width: 0px;
+  transition: all 0.5s 0s ease;
+}
+header .navbar li a:hover hr {
+  border-bottom: 3px solid #db2d43;
+  width: 50%;
+}
+/* Header Sticky */
+header.sticky {
+  background: white;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header.sticky .logo {
+  color: #db2d43;
+}
+header.sticky .logo span {
+  color: #db2d43;
+}
+header.sticky .navbar li a {
+  color: #db2d43;
+  font-family: sans-serif;
+}
+/* Content */
+
+.content2 {
+  color: white;
+  padding: 20px;
+  flex-direction: row;
+  width: 1200px;
+  margin: auto;
+}
+.content2 .card {
+  text-align: center;
+}
+.content2 .card h2 {
+  color: #db2d43;
+  font-size: 2rem;
+}
+.content2 .card hr {
+  border: none;
+  border-bottom: 4px solid #db2d43;
+  width: 140px;
+  border-radius: 5px;
+  margin: auto;
+}
+.content2 .card span {
+  color: #db2d43;
+  font-weight: bold;
+}
+.content2 .card .tentang {
+  width: 1000px;
+  margin: 20px auto;
+  line-height: 25px;
+}
+.content2 .card .about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.content2 .card .about svg {
+  width: 63px;
+  fill: #db2d43;
+  margin: 20px 0 10px 0;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  padding: 5px;
+  border: 2px solid #db2d43;
+}
+.content2 .card .about .btn {
+  width: 250px;
+  padding: 0 20px;
+  margin: 10px;
+  height: 300px;
+  text-align: center;
+  background-color: #2e3135;
+  border-radius: 1rem;
+  transition: all 0.5s 0s ease;
+}
+.content2 .card .about .kamar:hover {
+  box-shadow: 5px 4px 0px 0px rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+.content2 .card .about .mandi:hover {
+  box-shadow: 5px 4px 0px 0px rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+.content2 .card .about .dapur:hover {
+  box-shadow: 5px 4px 0px 0px rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+.content2 .card .about .wifi:hover {
+  box-shadow: 5px 4px 0px 0px rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
+.content2 .card .about .btn hr {
+  border: none;
+  border-bottom: 2px solid #db2d43;
+  width: 20px;
+  margin: 5px auto;
+  transition: all 0.5s 0s ease;
+}
+.content2 .card .about .kamar:hover hr {
+  width: 100px;
+}
+.content2 .card .about .wifi:hover hr {
+  width: 100px;
+}
+.content2 .card .about .dapur:hover hr {
+  width: 100px;
+}
+.content2 .card .about .mandi:hover hr {
+  width: 100px;
+}
+.content2 .card .about .btn h4 {
+  text-align: center;
+  color: #db2d43;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.content2 .card .about .btn p {
+  margin-top: 20px;
+}
+@media screen and (max-width: 960px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+    z-index: -1;
+  }
+  header.active {
+    background: black;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 99;
+    height: 58vh;
+    font-size: 1.6rem;
+  }
+  .logo {
+    padding-left: 25px;
+  }
+  .content form button {
+    max-height: 50px;
+  }
+}
