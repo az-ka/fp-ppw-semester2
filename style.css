@@ -281,7 +281,7 @@ header.sticky .navbar li a {
 .content2 .card button:hover {
   background-color: #f1f1f1;
 }
-.content2 .card button:hover h4{
+.content2 .card button:hover h4 {
   color: #db2d43;
 }
 .content2 .card button:hover hr {
