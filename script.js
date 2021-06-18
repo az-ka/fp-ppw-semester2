@@ -12,4 +12,15 @@ function myNavbar() {
     }
 }
 
-var data1 = {nama: "Santika", Harga: "Rp200.000 / malam", }
+// Hide Show Fasilitas List
+
+const button = document.querySelector('#button');
+const show = document.querySelector('.show-more');
+
+button.addEventListener('click', ()=> {
+    if(show.style.display === 'none'){
+        show.style.display = 'block';
+    }else{
+        show.style.display = 'none';
+    }
+});

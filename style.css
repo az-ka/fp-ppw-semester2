@@ -217,6 +217,10 @@ header.sticky .navbar li a {
   box-shadow: 5px 4px 0px 0px rgba(255, 255, 255, 0.75);
   cursor: pointer;
 }
+.content2 .card .about .more:hover {
+  box-shadow: 5px 4px 0px 0px rgba(255, 255, 255, 0.75);
+  cursor: pointer;
+}
 .content2 .card .about .btn hr {
   border: none;
   border-bottom: 2px solid #db2d43;
@@ -236,6 +240,9 @@ header.sticky .navbar li a {
 .content2 .card .about .mandi:hover hr {
   width: 100px;
 }
+.content2 .card .about .more:hover hr {
+  width: 100px;
+}
 .content2 .card .about .btn h4 {
   text-align: center;
   color: #db2d43;
@@ -244,6 +251,42 @@ header.sticky .navbar li a {
 }
 .content2 .card .about .btn p {
   margin-top: 20px;
+}
+.content2 .card .about .show-more {
+  display: none;
+}
+.content2 .card .about .show-more .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.content2 .card button {
+  padding: 10px 50px;
+  outline: none;
+  border-radius: 20px 20px 20px 20px;
+  border: none;
+  background-color: #db2d43;
+  color: white;
+  cursor: pointer;
+  transition: all 0.5s 0s ease;
+}
+.content2 .card button hr {
+  border: 1px solid #f1f1f1;
+  outline: none;
+  width: 10%;
+  transition: all 0.5s 0s ease;
+}
+.content2 .card button:hover {
+  background-color: #f1f1f1;
+}
+.content2 .card button:hover h4{
+  color: #db2d43;
+}
+.content2 .card button:hover hr {
+  border: 1px solid #db2d43;
+  width: 100%;
 }
 @media screen and (max-width: 960px) {
   header {
