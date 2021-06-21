@@ -151,6 +151,7 @@ header.sticky .navbar li a {
   flex-direction: row;
   width: 1200px;
   margin: auto;
+  height: 100vh;
 }
 .content2 .card {
   text-align: center;
