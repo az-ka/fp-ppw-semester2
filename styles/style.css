@@ -8,7 +8,7 @@
 }
 body {
   min-height: 1000s;
-  background-color: #111111;
+  background-color: black;
 }
 .banner {
   position: relative;
@@ -54,13 +54,18 @@ body {
   background: #f1f1f1;
 }
 .content form button {
-  width: 25%;
-  padding: 11px;
+  margin-top: 30px;
+  width: 15%;
+  padding: 10px;
   background: #db2d43;
   color: white;
   font-size: 15px;
+  font-weight: bolder;
+  border-radius: 50px;
   border: 2px solid #db2d43;
   cursor: pointer;
+  position: absolute;
+  left: 42.5%;
 }
 .content form button:hover {
   transition: all 0.3 ease;
@@ -146,20 +151,15 @@ header.sticky .navbar li a {
 /* Content */
 
 .content2 {
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 600px;
-  left: 1000px;
   color: white;
   padding: 20px;
   flex-direction: row;
   width: 1200px;
   margin: auto;
-  height: 100vh;
+  height: 100%;
 }
 .content2 .card {
   text-align: center;
-  height: 106vh;
 }
 .content2 .card h2 {
   color: #db2d43;
@@ -201,7 +201,7 @@ header.sticky .navbar li a {
   width: 250px;
   padding: 0 20px;
   margin: 10px;
-  height: 330px;
+  height: 300px;
   text-align: center;
   background-color: #2e3135;
   border-radius: 1rem;
@@ -319,6 +319,31 @@ header.sticky .navbar li a {
   box-shadow: 5px 4px 0px 0px rgba(255, 255, 255, 0.75);
   cursor: pointer;
 }
+
+/* Testimonials */
+.content2 .card .about .tst {
+  width: 250px;
+  padding: 0 20px;
+  margin: 10px;
+  height: 400px;
+  text-align: center;
+  background-color: #2e3135;
+  border-radius: 1rem;
+  transition: all 0.5s 0s ease;
+}
+.content2 .card .about .tst hr {
+  border: none;
+  border-bottom: 2px solid #db2d43;
+  width: 20px;
+  margin: 5px auto;
+  transition: all 0.5s 0s ease;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
 @media screen and (max-width: 960px) {
   header {
     display: flex;
@@ -371,6 +396,7 @@ header.sticky .navbar li a {
   }
   .content form button {
     width: 40%;
+    left: 30%;
     /* justify-content: center;
     justify-self: center;
     justify-items: center;
@@ -394,91 +420,11 @@ header.sticky .navbar li a {
     flex-direction: row;
     align-items: center;
   }
-}
-
-/* Riview */
-.riview {
-  color: white;
-}
-
-.riview .kata {
-  text-align: center;
-  cursor: pointer;
-}
-
-.riview .kata h2 {
-  font-weight: bold;
-}
-
-.riview .kata h2 span {
-  color: #db2d43;
-}
-
-.riview .kata hr {
-  margin: auto;
-  width: 100px;
-  border: none;
-  outline: none;
-  border-bottom: 3px solid #db2d43;
-  margin-bottom: 30px;
-  transition: 0.3s;
-}
-
-.riview .kata:hover hr {
-  width: 150px;
-}
-
-.riview .flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.riview .flex .btn{
-  background-color: #2e3135;
-  width: 250px;
-  height: 450px;
-  margin: 20px;
-  border-radius: 20px;
-  border-top: 20px solid #f1f1f1;
-  cursor: pointer;
-  text-align: center;
-  border-bottom: 20px solid #db2d43;
-  transition: 0.3s;
-}
-
-.riview .flex .btn:hover {
-  border-bottom: 200px solid #db2d43;
-}
-
-.riview .flex .btn img {
-  width: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  border-radius: 10px;
-  border: 3px solid #f1f1f1;
-}
-
-.riview .flex .btn h3, p {
-  margin-top: 10px;
-  padding: 0 15px 0 15px;
-}
-
-.riview .flex .btn h3 {
-  font-weight: bold;
-}
-
-.riview .flex .btn h4 {
-  font-weight: 100;
-}
-
-footer {
-  color: white;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  top: 128vh;
-  left: 105vh;
+  .title h2 {
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .footer {
+    margin-top: 40px;
+  }
 }

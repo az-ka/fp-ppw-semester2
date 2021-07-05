@@ -1,0 +1,63 @@
+<section class="banner" id="banner">
+        <div class="bg">
+            <img src="../img/pexels-patricia-lazaro-424184.jpg" alt="" />
+        </div>
+        <section>
+            <section class="content2">
+                <div class="card" style="margin-top: 100px;">
+                    <h2>How To Order</h2>
+                    <hr />
+                    <div style="display: flex; flex-direction: row; margin-top: 20px;">
+                        <h2
+                            style="background-color: white;margin-right: 20px; border-radius: 50px;align-self: center;width: 90px; height: 50px;">
+                            1</h2>
+                        <div style="text-align: left; display: flex; flex-direction: row;">
+                            <img src="../img/howtoorder1.png" alt="" width="30%" height="100%">
+                            <div style="margin-left: 20px;">
+                                <!-- <h1>Berbagai Tempat Penginapan Menarik</h1> -->
+                                <p>Langkah pertama masuk ke bagian order, anda bisa mengeklik tombol<br>
+                                    Order Now dibagian bawah atau Get Started di Halaman Home<br>
+                                Kemudian, masukkan nama penginapan atau anda bisa mencari<br>
+                                menggunakan filter yang tersedia dibawah kolom search. Jika sudah<br>
+                                klik enter dan tunggu.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; margin-top: 20px;">
+                        <h2
+                            style="background-color: white;margin-right: 20px; border-radius: 50px;align-self: center;width: 90px; height: 50px;">
+                            2</h2>
+                        <div style="text-align: left; display: flex; flex-direction: row;">
+                            <img src="../img/howtoorder2.png" alt="" width="30%" height="100%">
+                            <div style="margin-left: 20px;">
+                                <!-- <h1>Berbagai Tempat Penginapan Menarik</h1> -->
+                                <p>Lalu, Langkah kedua jika daftar penginapan telah muncul, pilih<br>
+                                salah satu untuk melihat detail dari penginapan tersebut
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; margin-top: 20px;">
+                        <h2
+                            style="background-color: white;margin-right: 20px; border-radius: 50px;align-self: center;width: 90px; height: 50px;">
+                            2</h2>
+                        <div style="text-align: left; display: flex; flex-direction: row;">
+                            <img src="../img/howtoorder2.png" alt="" width="30%" height="100%">
+                            <div style="margin-left: 20px;">
+                                <!-- <h1>Berbagai Tempat Penginapan Menarik</h1> -->
+                                <p>Lalu, Langkah kedua jika daftar penginapan telah muncul, pilih<br>
+                                salah satu untuk melihat detail dari penginapan tersebut
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center;">
+                    <button onclick="window.location.href='../pages/order.html'"
+                        style="padding: 10px; width: 20rem;border-radius: 50px; background-color: #db2d43; border-color: #db2d43; font-weight: bold; color: white; cursor: pointer;">Order
+                        Now</button>
+                </div>
+            </section>
+        </section>
+    </section>

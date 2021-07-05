@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 1000s;
+  /* background-color: black; */
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(5, 9, 11, 0.48);
+  background: linear-gradient(to top, #111111, transparent);
+  background-size: cover;
+}
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+}
+header .logo {
+  color: #db2d43;
+  font-weight: 700;
+  font-size: 2em;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-bottom: 3px solid #db2d43;
+  padding-bottom: 2px;
+}
+header .logo span {
+  color: #db2d43;
+  font-family: sans-serif;
+}
+header .navbar {
+  position: relative;
+  display: flex;
+  font-weight: bold;
+}
+header .navbar li {
+  list-style: none;
+  margin-left: 30px;
+  font-size: 20px;
+}
+header .navbar li a {
+  text-decoration: none;
+  color: #db2d43;
+  font-family: sans-serif;
+}
+header .navbar li a:hover {
+  transition: all 0.3 ease;
+  color: #db2d43;
+}
+header .navbar li a hr {
+  border: none;
+  border-bottom: 3px solid #db2d43;
+  width: 0px;
+  transition: all 0.5s 0s ease;
+}
+header .navbar li a:hover hr {
+  border-bottom: 3px solid #db2d43;
+  width: 50%;
+}
+
+/* Header Sticky */
+header.sticky {
+  background: black;
+  padding: 20px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header.sticky .logo {
+  color: #db2d43;
+}
+header.sticky .logo span {
+  color: #db2d43;
+}
+header.sticky .navbar li a {
+  color: #db2d43;
+  font-family: sans-serif;
+}
+
+/* Form */
+.content form input {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #f1f1f1;
+  margin-left: 50px;
+  width: 60%;
+  background: #f1f1f1;
+}
+.content form button {
+  width: 29%;
+  padding: 11px;
+  background: #db2d43;
+  color: white;
+  font-size: 15px;
+  border: 2px solid #db2d43;
+  cursor: pointer;
+}
+.content form button:hover {
+  transition: all 0.3 ease;
+  background-color: black;
+  border-color: black;
+}
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* Show Search Result */
+.result {
+  display: block;
+}
+.result .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}

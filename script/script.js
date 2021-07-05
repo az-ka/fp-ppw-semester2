@@ -1,7 +1,11 @@
+// Sticky Header
+
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   header.classList.toggle("sticky", window.scrollY > 0);
 });
+
+// Responsive Navbar
 
 function myNavbar() {
   var x = document.getElementById("navbar");
@@ -27,3 +31,5 @@ button.addEventListener("click", () => {
     x.innerHTML = "Show More";
   }
 });
+
+// Show Search Result
